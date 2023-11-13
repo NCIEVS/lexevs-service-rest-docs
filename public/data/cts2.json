@@ -4,7 +4,7 @@
     "name": "LexEVS CTS2 6.5 API Documentation (lexevscts2.nci.nih.gov/lexevscts2)",
     "protocol": "rest",
     "publicPath": "/lexevscts2",
-    "version": "1.0",
+    "version": "1.1",
     "resources": {
 
        "Service Metadata": {
