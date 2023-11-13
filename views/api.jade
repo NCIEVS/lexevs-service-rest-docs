@@ -2,6 +2,7 @@ extends layout
 block content
   h1=apiInfo.name
   .apiName(id=apiName)
+  script.include-html('https://cbiit.github.io/nci-softwaresolutions-elements/banners/government-shutdown-test.html')
   script.
     count = 0;
   - if (apiInfo.auth && apiInfo.auth.oauth && apiInfo.auth.oauth.version && apiInfo.auth.oauth.version == "1.0" && apiInfo.auth.oauth.type =='three-legged')

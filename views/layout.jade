@@ -6,6 +6,7 @@ html
         -else
             - var title = 'Live Documentation'
         title=title
+
         link(rel='stylesheet', href='stylesheets/prettify.css')
         link(rel='stylesheet', href='stylesheets/style.css')
         
@@ -15,6 +16,10 @@ html
         link(type="text/css", href="stylesheets/alpaca-jqueryui.css", rel="stylesheet")
 
     body
+        div(id='io-header')
+            div(class='f-center')
+                <include-html src="https://cbiit.github.io/nci-softwaresolutions-elements/banners/government-shutdown.html"></include-html>
+
         block content
         div(id='io-footer')
            div(class='f-center')
@@ -40,6 +45,7 @@ html
         script(type='text/javascript', src='javascripts/jquery-ui-latest.custom.min.js')
         script(type='text/javascript', src='javascripts/alpaca.js')
         script(type="text/javascript", src="javascripts/form.js")
+        script(type="text/javascript", src="javascripts/include-html.js")
         script(src='javascripts/json2.js')
         script(src='javascripts/prettify.js')
         script(src='javascripts/utilities.js')
